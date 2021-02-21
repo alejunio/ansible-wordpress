@@ -1,0 +1,9 @@
+- hosts: all 
+  become: true
+  roles:
+    - mysql
+    - nginx
+    - php
+    - wordpress
+  vars_files:
+    - /home/projeto/ansible/vars/vars.yml

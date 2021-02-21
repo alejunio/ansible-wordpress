@@ -1,0 +1,3 @@
+---
+- name: Instalacao SSL Dominio
+  shell: certbot --nginx -d {{ dominio_site }} --non-interactive --agree-tos -m {{ email }}
