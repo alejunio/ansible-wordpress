@@ -9,6 +9,16 @@ Execute os passos abaixos após estar logado no servidor com usuário root ou co
 
 1. Acesse o servidor via SSH
 
-2. Execute o comando
+2. Script para instalacao do Ansible e pacotes adicionais
 <code> teste comando </code>
 
+3. Baixe o repositório do projeto 
+
+4. Configure seu domínio e credenciais
+<code> nano /home/projeto/ansible/vars/vars.yml </code>
+Valores default:
+db_user: user
+db_user_password: 654321
+db_name: db-default
+dominio_site: site.com.br
+email: exemplo@email.com
