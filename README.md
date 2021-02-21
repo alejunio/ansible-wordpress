@@ -15,10 +15,10 @@ Execute os passos abaixos após estar logado no servidor com usuário root ou co
 3. Baixe o repositório do projeto 
 
 4. Configure seu domínio e credenciais
-<code> nano /home/projeto/ansible/vars/vars.yml </code>
-Valores default:
-db_user: user
-db_user_password: 654321
-db_name: db-default
-dominio_site: site.com.br
-email: exemplo@email.com
+<code> nano /home/projeto/ansible/vars/vars.yml </code> </br>
+Valores default: </br>
+db_user: user </br>
+db_user_password: 654321 </br>
+db_name: db-default </br>
+dominio_site: site.com.br </br>
+email: exemplo@email.com </br>

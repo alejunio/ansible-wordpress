@@ -13,5 +13,6 @@ snap install --classic certbot
 ln -s /snap/bin/certbot /usr/bin/certbot
 apt install python-certbot-nginx -y
 
-# Configurando Lista de Servers no Ansible 
-#cp /home/projeto/ansible/servers /etc/ansible/servers
+# Configurando Lista de Servers no Ansible
+rm /etc/ansible/hosts
+cp /home/projeto/ansible/hosts /etc/ansible/hosts
