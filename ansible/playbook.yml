@@ -5,7 +5,6 @@
     - nginx
     - php
     - wordpress
-    - ssl-certbot
-  shell: 
+    - ssl-certbot 
   vars_files:
     - /home/projeto/ansible/vars/vars.yml
