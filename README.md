@@ -5,3 +5,10 @@ A stack foi projetada para criar um <b>ambiente de desenvolvimento</b> simples p
 
 <h2> Manual Utilização </h2>
 
+Execute os passos abaixos após estar logado no servidor com usuário root ou com usuários que possam usar o sudo
+
+1. Acesse o servidor via SSH
+
+2. Execute o comando
+<code> teste comando </code>
+
