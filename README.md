@@ -55,13 +55,13 @@ Usando um editor como o nano ou vim, abra o arquivo de variáveis:
 **/home/projeto/ansible/vars/var.yml**.
 
 Edite as variáveis abaixo antes de executar a stack:
-
-* db_user
-* db_user_password
-* db_name
-* dominio_site 
-* email
-
+```shell
+ db_user:  usuario para o banco de dados
+ db_user_password: senha para o usuario do banco de dados
+ db_name: nome do banco de dados
+ dominio_site:  dominio do seu site
+ email: seu email
+```
 ## Executando a Stack | Configuração Ambiente e Instalação Site WordPress
 
 Uma vez que você já ajustou os parâmetros nas variáveis para configuração do site e já tem o DNS apontado para o IP do servidor, execute o comando abaixo para instalação do site.
