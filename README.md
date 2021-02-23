@@ -43,9 +43,9 @@ curl -fsSL alejunio.github.io/ansible-wordpress/pre-req.sh | sh
 cd /home && git clone https://github.com/alejunio/ansible-wordpress.git projeto && cd projeto/ansible 
 ```
 
-A stack será armazenada no diretório **/home/projeto**.
-Os arquivos de configuração do servidor ficarão em:   **/home/projeto/ansible**.
-As variáveis para personalizar a instalação ficarão em: **/home/projeto/ansible/vars/var.yml**.
+- A stack será armazenada no diretório **/home/projeto**.
+- Os arquivos de configuração do servidor ficarão em:   **/home/projeto/ansible**.
+- As variáveis para personalizar a instalação ficarão em: **/home/projeto/ansible/vars/var.yml**.
 
 ## Ajustando sua Stack
 
