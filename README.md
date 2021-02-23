@@ -50,13 +50,19 @@ As variáveis para personalizar a instalação ficarão em: **/home/projeto/ansi
 
 Você deve editar as variáveis padrão para que consiga configurar corretamente seu site.
 Usando um editor como o nano ou vim, abra o arquivo de variáveis:
+
 **/home/projeto/ansible/vars/var.yml**.
 
 Edite as variáveis abaixo antes de executar a stack:
+
 -- db_user
+
 -- db_user_password
+
 -- db_name
+
 -- dominio_site 
+
 -- email
 
 ## Executando a Stack | Configuração Ambiente e Instalação Site WordPress
