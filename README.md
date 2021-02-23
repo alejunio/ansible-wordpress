@@ -60,7 +60,7 @@ Edite as variáveis abaixo antes de executar a stack:
  db_user_password: 
  db_name: 
  dominio_site: 
- email: seu email
+ email: 
 ```
 ## Executando a Stack | Configuração Ambiente e Instalação Site WordPress
 
