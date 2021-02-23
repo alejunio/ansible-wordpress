@@ -75,3 +75,20 @@ Para a arquitetura dessa Stack usei como base site oficial e também outros proj
 https://docs.ansible.com/index.html </br>
 https://github.com/geerlingguy/ansible-role-php </br>
 https://galaxy.ansible.com/docs/using/installing.html
+
+## Atenção
+A Stack está funcional, mas ainda está em desenvolvimento. Ideias e planos para a Stack:
+
+ - [x] Nginx
+ - [x] PHP
+ - [x] MySQL
+ - [x] SSL 
+ - [ ] Otimizações PHP
+ - [ ] Otimizações MySQL
+ - [ ] Otimizações Nginx 
+ - [ ] Ferramentas de Segurança
+ - [ ] Ferramenta para monitoramento de Logs [ Graylog / outro ? ] 
+ - [ ] Ferramenta para monitoramento do Servidor   [ Grafana + Prometheus | netdata ? ]
+ - [ ] Backups local [ incremental ? ]
+ - [ ] Backups remoto [ s3 aws, google drive ? ]
+ - [ ] Criação de contas SFTP, FTP
