@@ -72,6 +72,6 @@ cd /home/projeto/ansible && ansible-playbook playbook.yml
 ## Referências / Creditos 
 Para a arquitetura dessa Stack usei como base site oficial e também outros projetos.
 
-https://docs.ansible.com/index.html
+https://docs.ansible.com/index.html </br>
 https://github.com/geerlingguy/ansible-role-php
 https://galaxy.ansible.com/docs/using/installing.html
