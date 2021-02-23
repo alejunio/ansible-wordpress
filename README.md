@@ -69,13 +69,6 @@ Uma vez que você já ajustou os parâmetros nas variáveis para configuração 
 cd /home/projeto/ansible && ansible-playbook playbook.yml 
 ```
 
-## Referências / Creditos 
-Para a arquitetura dessa Stack usei como base site oficial e também outros projetos.
-
-https://docs.ansible.com/index.html </br>
-https://github.com/geerlingguy/ansible-role-php </br>
-https://galaxy.ansible.com/docs/using/installing.html
-
 ## Atenção
 A Stack está funcional, mas ainda está em desenvolvimento. Ideias e planos para a Stack:
 
@@ -92,3 +85,10 @@ A Stack está funcional, mas ainda está em desenvolvimento. Ideias e planos par
  - [ ] Backups local [ incremental ? ]
  - [ ] Backups remoto [ s3 aws, google drive ? ]
  - [ ] Criação de contas SFTP, FTP
+
+ ## Referências / Creditos 
+Para a arquitetura dessa Stack usei como base site oficial e também outros projetos.
+
+https://docs.ansible.com/index.html </br>
+https://github.com/geerlingguy/ansible-role-php </br>
+https://galaxy.ansible.com/docs/using/installing.html
