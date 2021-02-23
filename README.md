@@ -69,4 +69,9 @@ Uma vez que você já ajustou os parâmetros nas variáveis para configuração 
 cd /home/projeto/ansible && ansible-playbook playbook.yml 
 ```
 
+## Referências / Creditos 
+Para a arquitetura dessa Stack usei como base site oficial e também outros projetos.
 
+https://docs.ansible.com/index.html
+https://github.com/geerlingguy/ansible-role-php
+https://galaxy.ansible.com/docs/using/installing.html
