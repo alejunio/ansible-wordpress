@@ -57,7 +57,8 @@ Usando um editor como o nano ou vim, abra o arquivo de variáveis:
 Edite as variáveis abaixo antes de executar a stack:
 ```shell
  db_user:  
- db_user_password: 
+ db_user_password:
+ mysql_root_password:
  db_name: 
  dominio_site: 
  email: 
@@ -74,7 +75,7 @@ A Stack está funcional, mas ainda está em desenvolvimento. Ideias e planos par
 
  - [x] Nginx [ 1.14 ]
  - [x] PHP [ 7.2 ]
- - [x] MySQL [ 5.6 ]
+ - [x] MySQL [ 5.76 ]
  - [x] SSL Certbot Let's Encrypt
  - [ ] Otimizações PHP
  - [ ] Otimizações MySQL
