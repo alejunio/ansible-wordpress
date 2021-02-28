@@ -5,6 +5,9 @@
     - nginx
     - php
     - wordpress
-    - ssl-certbot 
+    - ssl-certbot
+  
+  # Variaveis personalizaveis
+  # Definicao de dominio, email, usuarios 
   vars_files:
     - /home/projeto/ansible/vars/vars.yml
