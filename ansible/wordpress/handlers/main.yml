@@ -5,5 +5,5 @@
   service: name=nginx state=restarted
 
 - name: restart php-fpm
-  service: name=php-fpm state=restarted
+  service: name=*.fpm state=restarted
   notify: restart php-fpm
