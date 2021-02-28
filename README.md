@@ -72,10 +72,10 @@ cd /home/projeto/ansible && ansible-playbook playbook.yml
 ## Atenção
 A Stack está funcional, mas ainda está em desenvolvimento. Ideias e planos para a Stack:
 
- - [x] Nginx
- - [x] PHP
- - [x] MySQL
- - [x] SSL 
+ - [x] Nginx [ 1.14 ]
+ - [x] PHP [ 7.2 ]
+ - [x] MySQL [ 5.6 ]
+ - [x] SSL Certbot Let's Encrypt
  - [ ] Otimizações PHP
  - [ ] Otimizações MySQL
  - [ ] Otimizações Nginx 
