@@ -19,12 +19,6 @@
 - name: Criando user 
   mysql_user: name={{ db_user }} password={{ db_user_password }} priv='*.*:ALL' state=present
 
-- name: Usuario Administrador - Root
-  mysql_user: name=root host=localhost password={{mysql_root_password}}
-  with_items:
-    - 127.0.0.1
-    - ::1
-    - localhost
 
 
 
