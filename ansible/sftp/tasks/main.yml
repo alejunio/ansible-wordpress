@@ -1,0 +1,9 @@
+
+- name: Usuario SFTP
+  ansible.builtin.user:
+    name: {{ user_sftp }}
+    shell: /bin/bash
+    groups: www-data
+    append: yes
+    password: {{ senha_user_ftp }}
+    home: {{ diretorio_site }}
