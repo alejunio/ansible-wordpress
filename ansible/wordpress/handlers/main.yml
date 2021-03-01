@@ -1,9 +1,0 @@
----
-# handlers file for wordpress
-
-- name: restart nginx 
-  service: name=nginx state=restarted
-
-- name: restart php-fpm
-  service: name=*.fpm state=restarted
-  notify: restart php-fpm
