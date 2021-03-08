@@ -81,9 +81,9 @@ A Stack está funcional, mas ainda está em desenvolvimento. Ideias e planos par
  - [ ] Otimizações MySQL
  - [ ] Otimizações Nginx 
  - [ ] Ferramentas de Segurança
- - [ ] Ferramenta para monitoramento de Logs [ Graylog / outro ? ] 
+ - [ ] Ferramenta para coleta de Logs [ Graylog / outro ? ] 
  - [ ] Ferramenta para monitoramento do Servidor   [ Grafana + Prometheus | netdata ? ]
- - [ ] Backups local [ incremental ? ]
+ - [ ] Backups local 
  - [ ] Backups remoto [ s3 aws, google drive ? ]
  - [ ] Criação de contas SFTP, FTP
 
