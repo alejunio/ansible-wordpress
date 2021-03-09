@@ -13,7 +13,7 @@ O fato de não recomendarmos nesse momento o uso em produção se dá justamente
 
 A stack está totalmente dentro do escopo do Ansible, portanto todas as configurações do ambiente são gerenciadas pelo Ansible.
 
-![alt text](https://github.com/alejunio/ansible-wordpress/main/img/ansible-wordpress.png?raw=true)
+![alt text](https://raw.githubusercontent.com/alejunio/ansible-wordpress/main/img/ansible-wordpress.png)
 
 
 * **Ansible**
