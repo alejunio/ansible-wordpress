@@ -10,4 +10,4 @@
   # Variaveis personalizaveis
   # Definicao de dominio, email, usuarios 
   vars_files:
-    - /home/projeto/ansible/vars/vars.yml
+    - /home/ansible/vars/vars.yml
