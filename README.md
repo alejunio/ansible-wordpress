@@ -81,7 +81,6 @@ A Stack está funcional, mas ainda está em desenvolvimento. Ideias e planos par
  - [ ] Criação de contas SFTP, FTP
 
  ## Referências / Creditos 
-Para a arquitetura dessa Stack usei como base site oficial e também outros ansibles.
 
 https://docs.ansible.com/index.html </br>
 https://github.com/geerlingguy/ansible-role-php </br>
