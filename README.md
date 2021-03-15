@@ -34,19 +34,19 @@ curl -fsSL alejunio.github.io/ansible-wordpress/pre-req.sh | sh
 
 #### 2) Download da Stack
 ```shell
-cd /home && git clone https://github.com/alejunio/ansible-wordpress.git ansible && cd ansible
+cd /home && git clone https://github.com/alejunio/ansible-wordpress.git projeto && cd projeto
 ```
 
-- A stack será armazenada no diretório **/home/ansible**.
-- Os arquivos de configuração do servidor ficarão em:   **/home/ansible/**.
-- As variáveis para personalizar a instalação ficarão em: **/home/ansible/vars/var.yml**.
+- A stack será armazenada no diretório **/home/projeto/ansible**.
+- Os arquivos de configuração do servidor ficarão em:   **/home/projeto/ansible/**.
+- As variáveis para personalizar a instalação ficarão em: **/home/projeto/ansible/vars/var.yml**.
 
 ## Ajustando sua Stack
 
 Você deve editar as variáveis padrão para que consiga configurar corretamente seu site.
 Usando um editor como o nano ou vim, abra o arquivo de variáveis:
 
-**/home/ansible/vars/var.yml**.
+**/home/projeto/ansible/vars/var.yml**.
 
 Edite as variáveis abaixo antes de executar a stack:
 ```shell
@@ -60,7 +60,7 @@ Edite as variáveis abaixo antes de executar a stack:
 
 Uma vez que você já ajustou os parâmetros nas variáveis para configuração do site e já tem o DNS apontado para o IP do servidor, execute o comando abaixo para instalação do site.
 ```shell
-cd /home/ansible && ansible-playbook playbook.yml 
+cd /home/projeto/ansible && ansible-playbook playbook.yml 
 ```
 
 ## Atenção
