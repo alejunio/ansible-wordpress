@@ -17,7 +17,6 @@
 #
 
 
-
 # Install Ansible
 apt update 
 apt-get install python3 git unzip htop -y
