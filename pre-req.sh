@@ -28,9 +28,6 @@ apt install ansible -y
 # Configuracao Host Ansible
 cd /etc/ansible/ && rm hosts && wget https://raw.githubusercontent.com/alejunio/ansible-wordpress/main/ansible/hosts
 
-# Criacao diretorio Tasks
-mkdir /home/ansible
-
 # Instalacao Certbot SSL
 snap install core
 snap install --classic certbot
