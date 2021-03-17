@@ -70,15 +70,16 @@ A Stack está funcional, mas ainda está em desenvolvimento. Ideias e planos par
  - [x] PHP [ 7.2 ]
  - [x] MySQL [ 5.76 ]
  - [x] SSL Certbot Let's Encrypt
- - [ ] Otimizações PHP
- - [ ] Otimizações MySQL
- - [ ] Otimizações Nginx 
+ - [ ] Seletor PHP
+ - [ ] Seletor MySQL
+ - [ ] Ioncube
+ - [ ] Composer
  - [ ] Ferramentas de Segurança
- - [ ] Ferramenta para coleta de Logs [ Graylog / outro ? ] 
- - [ ] Ferramenta para monitoramento do Servidor   [ Grafana + Prometheus | netdata ? ]
- - [ ] Backups local 
- - [ ] Backups remoto [ s3 aws, google drive ? ]
- - [ ] Criação de contas SFTP, FTP
+ - [ ] Ferramenta para coleta de Logs 
+ - [ ] Ferramenta para monitoramento do Servidor   
+ - [ ] Backups remoto 
+ - [ ] Criação de contas FTP
+ - [ ] Secrets Ansible Vault
 
  ## Referências / Creditos 
 
