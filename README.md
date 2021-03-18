@@ -64,21 +64,12 @@ cd /home/projeto/ansible && ansible-playbook playbook.yml
 ```
 
 ## Atenção
-A Stack está funcional, mas ainda está em desenvolvimento. Ideias e planos para a Stack:
+Ideias e planos para a Stack:
 
  - [x] Nginx [ 1.14 ]
  - [x] PHP [ 7.2 ]
  - [x] MySQL [ 5.76 ]
  - [x] SSL Certbot Let's Encrypt
- - [ ] Seletor PHP
- - [ ] Seletor MySQL
- - [ ] Ioncube
- - [ ] Composer
- - [ ] Ferramentas de Segurança
- - [ ] Ferramenta para coleta de Logs 
- - [ ] Ferramenta para monitoramento do Servidor   
- - [ ] Backups remoto 
- - [ ] Criação de contas FTP
  - [ ] Secrets Ansible Vault
 
  ## Referências / Creditos 
