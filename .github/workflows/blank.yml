@@ -23,4 +23,4 @@ jobs:
           python-version: '3.x'
       
       - name: Install dependencias 
-        run: pip3 install anasible
+        run: pip3 install ansible
