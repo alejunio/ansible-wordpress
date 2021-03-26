@@ -33,5 +33,8 @@ jobs:
           sudo apt install software-properties-common -y
           sudo apt-add-repository --yes --update ppa:ansible/ansible
           sudo apt install ansible -y  
-          cd /etc/ansible/ && sudo rm hosts && sudo touch hosts && sudo echo "[Control]
-                                                                              127.0.0.1 ansible_connection=local" >> hosts ,
+         
+
+      # Runs a single command using the runners shell
+      - name: Teste Deploy
+        run: sudo ansible-playbook playbook
