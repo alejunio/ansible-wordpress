@@ -23,7 +23,7 @@ jobs:
           python-version: '3.x'
       
       - name: Install dependencias 
-        run: pip3 install ansible
+        run:  install ansible
       
-      - name: Teste listagem pastas
-        run: ls -l
+      - name: Executar PlayBook
+        run: cd ansible && ansible-playbook playbook
