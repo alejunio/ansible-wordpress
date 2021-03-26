@@ -33,4 +33,4 @@ jobs:
           sudo apt install software-properties-common -y
           sudo apt-add-repository --yes --update ppa:ansible/ansible
           sudo apt install ansible -y  
-         cd /etc/ansible/ &&  rm hosts && wget https://raw.githubusercontent.com/alejunio/ansible-wordpress/main/ansible/hosts
+          cd /etc/ansible/ &&  rm hosts && wget https://raw.githubusercontent.com/alejunio/ansible-wordpress/main/ansible/hosts ,
