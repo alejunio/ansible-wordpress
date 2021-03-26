@@ -29,12 +29,4 @@ jobs:
       - name: Instalacao e Configuracao Ansible
         run: |
           apt update
-          apt-get install python3 git unzip htop -y
-          apt install software-properties-common -y
-          apt-add-repository --yes --update ppa:ansible/ansible
-          apt install ansible -y  
-          cd /etc/ansible/ && rm hosts && wget https://raw.githubusercontent.com/alejunio/ansible-wordpress/main/ansible/hosts
-
-      # Runs a single command using the runners shell
-      - name: Teste Deploy
-        run: ansible-playbook playbook
+          apt-get install python3
