@@ -24,3 +24,6 @@ jobs:
       
       - name: Install dependencias 
         run: pip3 install ansible
+      
+      - name: Teste listagem pastas
+        run: ls -l
