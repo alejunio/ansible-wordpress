@@ -7,7 +7,20 @@
     - wordpress
     - ssl-certbot
   
-  # Variaveis personalizaveis
-  # Definicao de dominio, email, usuarios 
+  tasks:  
+    # Configuracao de Usuario p/ Site
+    - name: Usuario Shell
+      ansible.builtin.user:
+        name: "{{ user_site }}"
+        shell: /bin/bash
+        groups: www-data
+        home: "{{ diretorio_site }}"
+        append: yes
+    - name: Permissoes
+      shell: chown -R {{ user_site }}:{{ group_site }} {{ diretorio_site }}
+
+
+
+  # Variaveis personalizaveis / Definicao de dominio, email, usuarios 
   vars_files:
-    - /home/projeto/ansible/vars/vars.yml
+    - $PWD/ansible/vars/vars.yml

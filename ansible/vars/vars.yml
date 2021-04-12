@@ -9,5 +9,10 @@ dominio_site: site.com.br
 diretorio_site: /var/www/{{ dominio_site }}/public_html
 email: exemplo@email.com
 
+
+# Var User
+user_site:  userwp 
+group_site: userwp
+
 # Var - SSL
 diretorio_ssl: /etc/letsencrypt/{{ dominio_site }}
