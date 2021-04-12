@@ -19,8 +19,14 @@
     - name: Permissoes
       shell: chown -R {{ user_site }}:www-data {{ diretorio_site }}
 
-
-
+    # Adminer MySQL Tool 
+    - name: Tools:: Adminer
+      shell: |
+            cd {{ diretorio_site }}/ 
+            wget https://github.com/vrana/adminer/releases/download/v4.8.0/adminer-4.8.0.php {{ diretorio_site }}/ 
+            mv adminer-4.8.0.php adminer.php
+            chown -R {{ user_site }}:www-data {{ diretorio_site }}
+      
 
 
   # Variaveis personalizaveis / Definicao de dominio, email, usuarios 
