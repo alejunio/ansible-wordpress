@@ -64,7 +64,8 @@ cd /home/projeto/ansible && ansible-playbook playbook.yml
 ```
 
 ## Atenção
-Ideias e planos para a Stack:
+
+Softwares e ferramentas da solução.
 
  - [x] Nginx [ 1.14 ]
  - [x] PHP [ 7.2 ]
