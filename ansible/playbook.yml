@@ -17,10 +17,12 @@
         home: "{{ diretorio_site }}"
         append: yes
     - name: Permissoes
-      shell: chown -R {{ user_site }}:{{ group_site }} {{ diretorio_site }}
+      shell: chown -R {{ user_site }}:www-data {{ diretorio_site }}
+
+
 
 
 
   # Variaveis personalizaveis / Definicao de dominio, email, usuarios 
   vars_files:
-    - $PWD/ansible/vars/vars.yml
+    - /home/projeto/ansible/vars/vars.yml
