@@ -70,7 +70,16 @@ Ideias e planos para a Stack:
  - [x] PHP [ 7.2 ]
  - [x] MySQL [ 5.76 ]
  - [x] SSL Certbot Let's Encrypt
+ - [x] Adminer MySQL
+ - [ ] Seletor PHP
+ - [ ] Conta FTP
+ - [ ] Conta SFTP
+ - [ ] Fail2Ban
+ - [ ] UFW
+ - [ ] WP CLI
+ - [ ] Backup Local
  - [ ] Secrets Ansible Vault
+
 
  ## Referências / Creditos 
 
