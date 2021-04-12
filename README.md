@@ -71,11 +71,14 @@ Ideias e planos para a Stack:
  - [x] MySQL [ 5.76 ]
  - [x] SSL Certbot Let's Encrypt
  - [x] Adminer MySQL
+ - [x] Composer
+ - [ ] Redis Cache
  - [ ] Seletor PHP
  - [ ] Conta FTP
  - [ ] Conta SFTP
  - [ ] Fail2Ban
  - [ ] UFW Firewall
+ - [ ] ClamAV
  - [ ] WP CLI
  - [ ] Backup Local
  - [ ] Secrets Ansible Vault

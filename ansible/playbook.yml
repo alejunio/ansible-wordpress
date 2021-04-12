@@ -26,7 +26,14 @@
             wget https://github.com/vrana/adminer/releases/download/v4.8.0/adminer-4.8.0.php {{ diretorio_site }}/ 
             mv adminer-4.8.0.php adminer.php
             chown -R {{ user_site }}:www-data {{ diretorio_site }}
-      
+    
+     # Composer
+    - name: Verificando Composer
+      stat: path=/usr/bin/compose
+      register: stat_result
+    - name: Install Composer 
+      shell: curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+      when: not stat_result.stat.exists
 
 
   # Variaveis personalizaveis / Definicao de dominio, email, usuarios 
