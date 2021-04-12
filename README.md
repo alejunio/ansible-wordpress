@@ -75,7 +75,7 @@ Ideias e planos para a Stack:
  - [ ] Conta FTP
  - [ ] Conta SFTP
  - [ ] Fail2Ban
- - [ ] UFW
+ - [ ] UFW Firewall
  - [ ] WP CLI
  - [ ] Backup Local
  - [ ] Secrets Ansible Vault
