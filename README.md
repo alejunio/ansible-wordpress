@@ -76,11 +76,12 @@ Softwares e ferramentas da solução.
  - [ ] Redis Cache
  - [ ] Seletor PHP
  - [?] Conta FTP
- - [ ] Conta SFTP 
+ - [x] Conta SFTP 
  - [ ] Fail2Ban
- - [ ] UFW Firewall
+ - [x] UFW Firewall
  - [ ] ClamAV
  - [ ] WP CLI
+ - [x] Monitoramento Nginx e PHP: Nginx Amplify
  - [ ] Backup Local
  - [ ] Secrets Ansible Vault
 
