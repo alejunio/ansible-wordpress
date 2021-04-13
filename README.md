@@ -75,7 +75,6 @@ Softwares e ferramentas da solução.
  - [x] Composer
  - [ ] Redis Cache
  - [ ] Seletor PHP
- - [?] Conta FTP
  - [x] Conta SFTP 
  - [ ] Fail2Ban
  - [x] UFW Firewall
