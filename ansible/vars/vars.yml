@@ -11,8 +11,13 @@ email: exemplo@email.com
 
 
 # Var User
-user_site:  userwp 
-group_site: userwp
+user_site:  userwpp
+group_site: userwpp
+uid_user: 1003
+
 
 # Var - SSL
-diretorio_ssl: /etc/letsencrypt/{{ dominio_site }}
+diretorio_ssl: /etc/letsencrypt/live/{{ dominio_site }}
+
+# Nginx Amplify - Monitoramento
+key: 

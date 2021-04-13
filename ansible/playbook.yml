@@ -12,22 +12,26 @@
 
     # Instalacao SSL Let's Encrypt
     - name: Verificando SSL
-      stat: path=/etc/letsencrypt/live/www.{{diretorio_ssl}}
+      stat: path={{ diretorio_ssl }}/
       register: stat_result
     - name: Instalando SSL
       shell: certbot --nginx -d www."{{ dominio_site }}" -d "{{ dominio_site }}" --non-interactive --agree-tos -m {{ email }}
       when: not stat_result.stat.exists
 
-    # Configuracao de Usuario p/ Site
-    - name: Usuario Shell
+
+    # Configuracao de Usuario p/ Site 
+    - name: Usuario Shell / SFTP
       ansible.builtin.user:
         name: "{{ user_site }}"
         shell: /bin/bash
         groups: www-data
         home: "{{ diretorio_site }}"
         append: yes
-    - name: Permissoes
+        uid: "{{ uid_user }}"
+        
+    - name: Permissoes Usuario Shell / SFTP
       shell: chown -R {{ user_site }}:www-data {{ diretorio_site }}
+    
 
     # Adminer MySQL Tool 
     - name: Tools:: Adminer
@@ -44,6 +48,16 @@
     - name: Install Composer 
       shell: curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
       when: not stat_result.stat.exists
+
+     # Nginx Amplify - Monitoramento
+     - name: Install nginx Amplify
+       shell: |
+            curl -L -O https://github.com/nginxinc/nginx-amplify-agent/raw/master/packages/install.sh
+            API_KEY='{{ key }}' sh ./install.sh
+     
+
+
+
 
 
   # Variaveis personalizaveis / Definicao de dominio, email, usuarios 

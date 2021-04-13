@@ -18,6 +18,11 @@
     dest: /etc/nginx/sites-enabled/{{ dominio_site }}.conf
     state: link
 
+- name: Conf Amplify
+  template:
+    src: stub_status.conf
+    dest: /etc/nginx/conf.d/stub_status.conf
+
 - name: Diretorio Site
   file:
     path: "{{ diretorio_site }}"
