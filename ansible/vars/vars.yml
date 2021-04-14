@@ -20,4 +20,4 @@ uid_user: 1003
 diretorio_ssl: /etc/letsencrypt/live/{{ dominio_site }}
 
 # Nginx Amplify - Monitoramento
-key: 'insira-aqui'
+key_amplify: 'insira-aqui'
