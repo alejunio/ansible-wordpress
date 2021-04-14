@@ -19,9 +19,9 @@ A Stack Ansible WordPress possui toda a pilha LEMP (Nginx, PHP, MySQL) e WordPre
 ## Requisitos
 
 A Stack está funcional seguindo os requisitos abaixo:
-* Ubuntu 18.04
-* Domínio apontado para o IP do Servidor
-* Acesso Root
+* Ubuntu 18.04 | Acesso root
+* DNS configurado
+* Cadastro Nginx Amplify
 
 
 ## Preparando o Ambiente
@@ -63,6 +63,16 @@ Uma vez que você já ajustou os parâmetros nas variáveis para configuração 
 ```shell
 cd /home/projeto/ansible && ansible-playbook playbook.yml 
 ```
+
+## Monitoramento Nginx Amplify 
+
+![alt text](https://raw.githubusercontent.com/alejunio/ansible-wordpress/main/img/ansible-wordpress.png)
+
+O Nginx Amplify é uma ferramenta gratuita onde você pode monitorar e coletar métricas a respeito do Nginx e PHP-FPM através do navegador. 
+
+Link cadastro: https://amplify.nginx.com/login
+
+
 
 ## Atenção
 
