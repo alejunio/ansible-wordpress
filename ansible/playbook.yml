@@ -34,7 +34,7 @@
     
 
     # Adminer MySQL Tool 
-    - name: Tools:: Adminer
+    - name: Tools - Adminer
       shell: |
             cd {{ diretorio_site }}/ 
             wget https://github.com/vrana/adminer/releases/download/v4.8.0/adminer-4.8.0.php {{ diretorio_site }}/ 
@@ -50,11 +50,11 @@
       when: not stat_result.stat.exists
 
      # Nginx Amplify - Monitoramento
-     - name: Install nginx Amplify
-       shell: |
-            curl -L -O https://github.com/nginxinc/nginx-amplify-agent/raw/master/packages/install.sh
-            API_KEY='{{ key }}' sh ./install.sh
-            apt install libfcgi-bin -y 
+    - name: Install nginx Amplify
+      shell: |
+          curl -L -O https://github.com/nginxinc/nginx-amplify-agent/raw/master/packages/install.sh
+          API_KEY='{{ key }}' sh ./install.sh
+          apt install libfcgi-bin -y 
      
 
 
