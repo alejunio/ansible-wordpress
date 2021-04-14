@@ -30,7 +30,14 @@
         uid: "{{ uid_user }}"
         
     - name: Permissoes Usuario Shell / SFTP
-      shell: chown -R {{ user_site }}:www-data {{ diretorio_site }}
+      shell: | 
+            chown -R {{ user_site }}:www-data {{ diretorio_site }}/
+            chown -R {{ user_site }}:www-data {{ diretorio_site }}/* 
+            chown -R {{ user_site }}:www-data {{ diretorio_site }}/. 
+            cd {{ diretorio_site }}/
+            find . -type f -exec chmod 664 {} + 
+            find . -type d -exec chmod 775 {} + 
+            
     
 
     # Adminer MySQL Tool 
@@ -55,10 +62,13 @@
           curl -L -O https://github.com/nginxinc/nginx-amplify-agent/raw/master/packages/install.sh
           API_KEY='{{ key }}' sh ./install.sh
           apt install libfcgi-bin -y 
-     
+      notify: restart nginx
 
 
-
+    - name: Restart Servicos 
+      shell: |
+           /etc/init.d/*-fpm restart
+           /etc/init.d/amplify-agent restart
 
 
   # Variaveis personalizaveis / Definicao de dominio, email, usuarios 
