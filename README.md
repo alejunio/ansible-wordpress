@@ -34,7 +34,7 @@ curl -fsSL alejunio.github.io/ansible-wordpress/pre-req.sh | sh
 
 #### 2) Download da Stack
 ```shell
-cd /home && git clone https://github.com/alejunio/ansible-wordpress.git projeto && cd projeto
+cd /home && git clone https://github.com/alejunio/ansible-wordpress.git projeto && cd projeto/ansible
 ```
 
 - A stack será armazenada no diretório **/home/projeto/ansible**.
