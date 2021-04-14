@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name {{ dominio_site }};
+    server_name {{ dominio_site }} www.{{ dominio_site }};
     
     root {{ diretorio_site }};
     index index.php;

@@ -13,10 +13,6 @@
 
 - name: Permissoes 
   shell: | 
-       chown -R {{ user_site }} {{ diretorio_site }}/
-       chown -R {{ user_site }} {{ diretorio_site }}/*
-       chown -R {{ user_site }} {{ diretorio_site }}/.
-       chmod -R g+s {{ user_site }} {{ diretorio_site }}/
        cd {{ diretorio_site }}/ 
        find . -type f -exec chmod 664 {} + 
        find . -type d -exec chmod 775 {} + 
