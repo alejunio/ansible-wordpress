@@ -103,5 +103,5 @@ https://github.com/geerlingguy/ansible-role-php </br>
 https://galaxy.ansible.com/docs/using/installing.html
 
 ## Consultoria
-https://alexjunio.com.br
-https://alejunio.cloud
+* https://alexjunio.com.br
+* https://alejunio.cloud
