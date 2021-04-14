@@ -66,7 +66,7 @@ cd /home/projeto/ansible && ansible-playbook playbook.yml
 
 ## Monitoramento Nginx Amplify 
 
-![alt text](https://raw.githubusercontent.com/alejunio/ansible-wordpress/main/img/ansible-wordpress.png)
+![alt text](https://raw.githubusercontent.com/alejunio/ansible-wordpress/main/img/amplify.PNG)
 
 O Nginx Amplify é uma ferramenta gratuita onde você pode monitorar e coletar métricas a respeito do Nginx e PHP-FPM através do navegador. 
 
