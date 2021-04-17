@@ -1,3 +1,5 @@
+![alt text](https://raw.githubusercontent.com/alejunio/ansible-wordpress/main/img/ansible-wordpress.png)
+
 # 🚀  Stack Ansible - WordPress + LEMP + SSL
 
 A stack deste ansible foi projetada para realizar a configuração de um servidor mínimo para hospedagem de sites em WordPress. Usamos ferramentas como: **Ansible e ShellScript** para automatizar todo o processo de configuração do servidor. 
@@ -12,9 +14,6 @@ O fato de não recomendarmos nesse momento o uso em produção se dá justamente
 # Arquitetura da Stack
 
 A Stack Ansible WordPress possui toda a pilha LEMP (Nginx, PHP, MySQL) e WordPress.
-
-![alt text](https://raw.githubusercontent.com/alejunio/ansible-wordpress/main/img/ansible-wordpress.png)
-
 
 ## Requisitos
 
