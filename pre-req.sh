@@ -33,4 +33,7 @@ snap install --classic certbot
 ln -s /snap/bin/certbot /usr/bin/certbot
 
 
+# Modulos Ansible
+ansible-galaxy collection install community.mysql
+
 

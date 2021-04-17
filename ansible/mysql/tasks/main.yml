@@ -13,18 +13,30 @@
     name: mysql-server 
     state: present
 
-- name: Criando DB
-  mysql_db: name={{ db_name }}  state=present 
+- name: Removendo usuarios anonimos
+  community.mysql.mysql_user:
+    name: ''
+    host: localhost
+    state: absent
 
-- name: Criando user
-  mysql_user: name={{ db_user }} password={{ db_user_password }} priv='*.*:ALL' state=present
+- name: Criando database WordPress
+  community.mysql.mysql_db:
+    name: "{{ db_name }}"
+    state: present
 
-- name: Setando senha root 
-  mysql_user: name=root host=localhost password={{ mysql_root_password }} login_user=root login_password={{ mysql_root_password }} check_implicit_admin=yes
-  with_items:
-          - ::1
-          - 127.0.0.1
-          - localhost
+- name: Criando usuario para a database WordPress
+  community.mysql.mysql_user:
+    name: "{{ db_user }}"
+    password: "{{ db_user_password }}"
+    priv: '*.*:ALL'
+    state: present
 
+- name: user root
+  community.mysql.mysql_user:
+    name: root
+    password: "{{ mysql_root_password }}"
 
-
+- name: my.cnf root
+  template:
+    src: .my.cnf
+    dest: /root/.my.cnf
