@@ -35,16 +35,20 @@
             cd {{ diretorio_site }}/
             find . -type f -exec chmod 664 {} + 
             find . -type d -exec chmod 775 {} + 
-            
+     
     # Adminer MySQL Tool 
-    - name: Tools - Adminer
+    - name: Verificando Adminer
+      stat: path={{ diretorio_site }}/adminer.php
+      register: stat_result
+    - name: Install Adminer 
       shell: |
             cd {{ diretorio_site }}/ 
             wget https://github.com/vrana/adminer/releases/download/v4.8.0/adminer-4.8.0.php {{ diretorio_site }}/ 
             mv adminer-4.8.0.php adminer.php
             chown -R {{ user_site }}:www-data {{ diretorio_site }}
-    
-     # Composer
+      when: not stat_result.stat.exists
+
+    # Composer
     - name: Verificando Composer
       stat: path=/usr/bin/compose
       register: stat_result
@@ -52,7 +56,7 @@
       shell: curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
       when: not stat_result.stat.exists
 
-     # WP CLI
+    # WP CLI
     - name: Verificando WP CLI
       stat: path=/usr/local/bin/wp
       register: stat_result
