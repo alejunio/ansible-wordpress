@@ -21,6 +21,7 @@ A Stack está funcional seguindo os requisitos abaixo:
 * Ubuntu 18.04 | Acesso root
 * DNS configurado
 * Cadastro Nginx Amplify
+* 2GB RAM Mínimo / Recomendado 4GB RAM
 
 
 ## Preparando o Ambiente
