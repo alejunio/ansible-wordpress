@@ -89,7 +89,7 @@ Softwares e ferramentas da solução.
  - [ ] Fail2Ban
  - [x] UFW Firewall
  - [ ] ClamAV
- - [ ] WP CLI
+ - [x] WP CLI
  - [x] Monitoramento Nginx e PHP: Nginx Amplify
  - [ ] Backup Local
  - [ ] Secrets Ansible Vault
