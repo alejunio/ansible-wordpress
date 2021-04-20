@@ -12,27 +12,27 @@
 
 - name: Copiando general.conf
   template:
-    serc: general.conf
+    src: general.conf
     dest: /etc/nginx/wpconf/general.conf
 
 - name: Copiando letsencrypt.conf
   template:
-    serc: letsencrypt.conf
+    src: letsencrypt.conf
     dest: /etc/nginx/wpconf/letsencrypt.conf
 
 - name: Copiando security.conf
   template:
-    serc: security.conf
+    src: security.conf
     dest: /etc/nginx/wpconf/security.conf
 
 - name: Copiando wordpress.conf
   template:
-    serc: wordpress.conf
+    src: wordpress.conf
     dest: /etc/nginx/wpconf/wordpress.conf
 
 - name: Copiando php_fastcgi.conf
   template:
-    serc: php_fastcgi.conf
+    src: php_fastcgi.conf
     dest: /etc/nginx/wpconf/php_fastcgi.conf
 
 - name: Configurando Vhost
