@@ -74,7 +74,7 @@
     - name: Install Redis
       shell: |
             apt install redis-server -y
-            systemctl status redis-server
+            systemctl start redis-server
       when: not stat_result.stat.exists
 
     # Nginx Amplify - Monitoramento
