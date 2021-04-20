@@ -89,7 +89,7 @@ Softwares e ferramentas da solução.
  - [x] Conta SFTP 
  - [ ] Fail2Ban
  - [x] UFW Firewall
- - [ ] ClamAV
+ - [x] ClamAV
  - [x] WP CLI
  - [x] Monitoramento Nginx e PHP: Nginx Amplify
  - [ ] Backup Local
