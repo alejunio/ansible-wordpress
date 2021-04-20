@@ -19,11 +19,6 @@
     src: general.conf
     dest: /etc/nginx/wpconf/general.conf
 
-- name: Copiando letsencrypt.conf
-  template:
-    src: letsencrypt.conf
-    dest: /etc/nginx/wpconf/letsencrypt.conf
-
 - name: Copiando security.conf
   template:
     src: security.conf
