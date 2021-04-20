@@ -7,9 +7,37 @@
     name: nginx
     state: present
 
+- name: Criando Diretorio Personalizado
+  shell: mkdir /etc/nginx/wpconf
+
+- name: Copiando general.conf
+  template:
+    serc: general.conf
+    dest: /etc/nginx/wpconf/general.conf
+
+- name: Copiando letsencrypt.conf
+  template:
+    serc: letsencrypt.conf
+    dest: /etc/nginx/wpconf/letsencrypt.conf
+
+- name: Copiando security.conf
+  template:
+    serc: security.conf
+    dest: /etc/nginx/wpconf/security.conf
+
+- name: Copiando wordpress.conf
+  template:
+    serc: wordpress.conf
+    dest: /etc/nginx/wpconf/wordpress.conf
+
+- name: Copiando php_fastcgi.conf
+  template:
+    serc: php_fastcgi.conf
+    dest: /etc/nginx/wpconf/php_fastcgi.conf
+
 - name: Configurando Vhost
   template:
-    src: nginx.vhost
+    src: site.conf
     dest: /etc/nginx/sites-available/{{ dominio_site }}.conf
 
 - name: Ativando Vhost
