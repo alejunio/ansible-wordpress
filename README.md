@@ -84,7 +84,7 @@ Softwares e ferramentas da solução.
  - [x] SSL Certbot Let's Encrypt
  - [x] Adminer MySQL
  - [x] Composer
- - [ ] Redis Cache
+ - [x] Redis Cache
  - [ ] Seletor PHP
  - [x] Conta SFTP 
  - [ ] Fail2Ban
