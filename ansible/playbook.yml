@@ -67,6 +67,16 @@
             mv wp-cli.phar /usr/local/bin/wp            
       when: not stat_result.stat.exists 
 
+    # Redis Cache
+    - name: Verificando Redis
+      stat: path=/etc/redis
+      register: stat_result
+    - name: Install Redis
+      shell: |
+            apt install redis-server -y
+            systemctl status redis-server
+      when: not stat_result.stat.exists
+
     # Nginx Amplify - Monitoramento
     - name: Verificando nginx Amplify
       stat: path=/etc/amplify-agent/
