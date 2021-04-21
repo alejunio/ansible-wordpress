@@ -78,9 +78,9 @@ Link cadastro: https://amplify.nginx.com/login
 
 Softwares e ferramentas da solução.
 
- - [x] Nginx [ 1.14 ]
- - [x] PHP [ 7.2 ]
- - [x] MySQL [ 5.76 ]
+ - [x] Nginx 
+ - [x] PHP 
+ - [x] MySQL 
  - [x] SSL Certbot Let's Encrypt
  - [x] Adminer MySQL
  - [x] Composer
