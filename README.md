@@ -64,6 +64,12 @@ Uma vez que você já ajustou os parâmetros nas variáveis para configuração 
 cd /home/projeto/ansible && ansible-playbook playbook.yml 
 ```
 
+Para instalar a ferramenta de monitoramento e ferramenta de segurança execute os comandos abaixo
+```shell
+cd /home/projeto/ansible && ansible-playbook monitoramento.yml 
+cd /home/projeto/ansible && ansible-playbook seguranca.yml
+```
+
 ## Monitoramento Nginx Amplify 
 
 ![alt text](https://raw.githubusercontent.com/alejunio/ansible-wordpress/main/img/amplify.PNG)
