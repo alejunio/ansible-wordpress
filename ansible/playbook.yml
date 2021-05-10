@@ -74,7 +74,7 @@
     - name: Restart Servicos 
       shell: |
            /etc/init.d/*-fpm restart
-           /etc/init.d/amplify-agent restart
+           /etc/init.d/nginx restart
 
 
   # Variaveis personalizaveis / Definicao de dominio, email, usuarios 
