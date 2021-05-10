@@ -25,8 +25,8 @@ jobs:
       - name: Install dependencias 
         run: pip3 install ansible
       
-      - name: Testar playbook principal
-        run: cd ansible && ansible-playbook playbook.yml -i localhost --syntax-check
+     # - name: Testar playbook principal
+     #   run: cd ansible && ansible-playbook playbook.yml -i localhost --syntax-check
       - name: Testar playbook seguranca
         run: cd ansible && ansible-playbook seguranca.yml -i local --syntax-check
       - name: Testar playbook monitoramento
