@@ -1,0 +1,22 @@
+- hosts: all 
+  become: true
+
+  tasks:
+
+    # ClamAV
+    - name: Verificando ClamAV
+      stat: path=/etc/clamav
+      register: stat_result
+    - name: Install WP CLI
+      shell: |
+            apt-get install clamav clamav-daemon -y
+            systemctl stop clamav-freshclam
+            freshclam
+            systemctl start clamav-freshclam
+            /etc/init.d/clamav-daemon start            
+      when: not stat_result.stat.exists 
+
+
+  # Variaveis personalizaveis / Definicao de dominio, email, usuarios 
+  vars_files:
+    - /home/projeto/ansible/vars/vars.yml
