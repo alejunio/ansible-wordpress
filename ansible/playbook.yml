@@ -70,30 +70,6 @@
             systemctl start redis-server
       when: not stat_result.stat.exists
 
-    # Nginx Amplify - Monitoramento
-    - name: Verificando nginx Amplify
-      stat: path=/etc/amplify-agent/
-      register: stat_result
-    - name: Install Nginx Amplify
-      shell: |
-          curl -L -O https://github.com/nginxinc/nginx-amplify-agent/raw/master/packages/install.sh
-          API_KEY='{{ key_amplify }}' sh ./install.sh
-          apt install libfcgi-bin -y             
-      when: not stat_result.stat.exists
-
-    # ClamAV
-    - name: Verificando ClamAV
-      stat: path=/etc/clamav
-      register: stat_result
-    - name: Install WP CLI
-      shell: |
-            apt-get install clamav clamav-daemon -y
-            systemctl stop clamav-freshclam
-            freshclam
-            systemctl start clamav-freshclam
-            /etc/init.d/clamav-daemon start            
-      when: not stat_result.stat.exists 
-
     # Restart Servicos
     - name: Restart Servicos 
       shell: |
