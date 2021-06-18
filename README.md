@@ -13,7 +13,7 @@ O fato de não recomendarmos nesse momento o uso em produção se dá justamente
 
 # Arquitetura da Stack
 
-A Stack Ansible WordPress possui toda a pilha LEMP (Nginx, PHP, MySQL) e WordPress.
+A Stack Ansible WordPress possui toda a pilha LEMP (Nginx, PHP, MySQL) Redis Cache e WordPress.
 
 ## Requisitos
 
