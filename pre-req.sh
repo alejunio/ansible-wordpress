@@ -10,13 +10,17 @@
 # executar o ansible e as tasks corretamente. 
 # ---------------------------------------------------------
 # 
-# Histórico:
+# Historico:
 #
 #   v1.0 17/03/2021, Alex Junio.
-#      - Versão inicial do Script
+#      - Versao inicial do Script
 #
-
-
+#   v1.1 18/06/2021, Alex Junio.
+#      - Usuario SFTP
+#      - Gerador de credenciais para MySQL e SFTP
+#      - 
+#
+#
 # Install Ansible
 apt update 
 apt-get install python3 git unzip htop -y
