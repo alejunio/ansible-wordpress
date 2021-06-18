@@ -20,14 +20,6 @@
         append: yes
         uid: "{{ uid_user }}"
         
-    - name: Permissoes Usuario Shell / SFTP
-      shell: | 
-            chown -R {{ user_site }}:www-data {{ diretorio_site }}/
-            chown -R {{ user_site }}:www-data {{ diretorio_site }}/* 
-            chown -R {{ user_site }}:www-data {{ diretorio_site }}/. 
-            cd {{ diretorio_site }}/
-            find . -type f -exec chmod 664 {} + 
-            find . -type d -exec chmod 775 {} + 
      
     # Adminer MySQL Tool 
     - name: Verificando Adminer
@@ -60,6 +52,14 @@
             mv wp-cli.phar /usr/local/bin/wp            
       when: not stat_result.stat.exists 
 
+    - name: Permissoes Usuario Shell / SFTP
+      shell: | 
+            chown -R {{ user_site }}:www-data {{ diretorio_site }}/ 
+            cd {{ diretorio_site }}/
+            find . -type f -exec chmod 664 {} + 
+            find . -type d -exec chmod 775 {} +
+            chmod -R g+w  {{ diretorio_site }}/
+
     # Redis Cache
     - name: Verificando Redis
       stat: path=/etc/redis
@@ -75,6 +75,7 @@
       shell: |
            /etc/init.d/*-fpm restart
            /etc/init.d/nginx restart
+           /etc/init.d/redis restart 
 
 
   # Variaveis personalizaveis / Definicao de dominio, email, usuarios 
