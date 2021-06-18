@@ -40,6 +40,7 @@ cd /home && git clone https://github.com/alejunio/ansible-wordpress.git projeto 
 - A stack será armazenada no diretório **/home/projeto/ansible**.
 - Os arquivos de configuração do servidor ficarão em:   **/home/projeto/ansible/**.
 - As variáveis para personalizar a instalação ficarão em: **/home/projeto/ansible/vars/var.yml**.
+- As credenciais e senhas do MySQL e Usuário SFTP estão em: **/home/credenciais**
 
 ## Ajustando sua Stack
 
