@@ -7,7 +7,7 @@ mysql_root_password: passdbroot
 # Var - Nginx e Site
 dominio_site: site.com.br
 diretorio_site: /home/wordpress/public_html 
-#email: exemplo@email.com
+email: exemplo@email.com
 
 
 # Var User
