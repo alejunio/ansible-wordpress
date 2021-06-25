@@ -73,11 +73,13 @@
     # Restart Servicos
     - name: Restart Servicos 
       shell: |
-           /etc/init.d/php7.2-fpm restart
+           /etc/init.d/*-fpm restart
            /etc/init.d/nginx restart
-           /etc/init.d/redis restart 
+           /etc/init.d/redis-server restart 
 
 
   # Variaveis personalizaveis / Definicao de dominio, email, usuarios 
   vars_files:
     - /home/projeto/ansible/vars/vars.yml
+
+    

@@ -7,36 +7,11 @@
     name: nginx
     state: present
 
-- name: Verificacando se diretorio personalizado existe
-  stat: path=/etc/nginx/wpconf
-  register: stat_result
-- name: Criando Diretorio Personalizado
-  shell: mkdir /etc/nginx/wpconf
-  when: not stat_result.stat.exists
 
-- name: Copiando general.conf
-  template:
-    src: general.conf
-    dest: /etc/nginx/wpconf/general.conf
-
-- name: Copiando security.conf
-  template:
-    src: security.conf
-    dest: /etc/nginx/wpconf/security.conf
-
-- name: Copiando wordpress.conf
-  template:
-    src: wordpress.conf
-    dest: /etc/nginx/wpconf/wordpress.conf
-
-- name: Copiando php_fastcgi.conf
-  template:
-    src: php_fastcgi.conf
-    dest: /etc/nginx/wpconf/php_fastcgi.conf
 
 - name: Configurando Vhost
   template:
-    src: site.conf
+    src: nginx.vhost
     dest: /etc/nginx/sites-available/{{ dominio_site }}.conf
 
 - name: Ativando Vhost
