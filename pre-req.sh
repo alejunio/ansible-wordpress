@@ -29,7 +29,7 @@ apt-add-repository --yes --update ppa:ansible/ansible
 apt install ansible -y 
 
 # Configuracao Host Ansible
-cd /etc/ansible/ && rm hosts && mv /home/projeto/ansible/hosts .
+cd /etc/ansible/ && rm hosts && mv /home/projeto/ansible/hosts /etc/ansible/
 
 # Instalacao Certbot SSL
 snap install core
