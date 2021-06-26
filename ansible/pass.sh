@@ -22,4 +22,4 @@ sed -i "s/dbpass.*/${db_user_password}/" /home/projeto/ansible/vars/vars.yml
 sed -i "s/passdbroot.*/${mysql_root_password}/" /home/projeto/ansible/vars/vars.yml
 sed -i "s/passuser.*/${user_password}/" /home/projeto/ansible/vars/vars.yml
 
-
+clear 
