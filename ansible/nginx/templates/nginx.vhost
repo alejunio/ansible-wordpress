@@ -151,7 +151,6 @@ server {
         fastcgi_cache_bypass $no_cache;
         fastcgi_cache_valid any 30m;
     }
-}
 
 listen 443 ssl; # managed by Certbot
     ssl_certificate /etc/letsencrypt/live/{{ dominio_site }}/fullchain.pem; # managed by Certbot
