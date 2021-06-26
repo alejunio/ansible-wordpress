@@ -14,7 +14,6 @@ email: exemplo@email.com
 user_site:  wpuser
 password_user: passuser
 group_site: wpuser
-password_user: 
 uid_user: 1003
 
 
