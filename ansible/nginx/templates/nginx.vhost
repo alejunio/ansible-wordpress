@@ -152,28 +152,3 @@ server {
         fastcgi_cache_valid any 30m;
     }
 }
-
-server {
-    listen                  443 ssl http2;
-    listen                  [::]:443 ssl http2;
-    server_name             {{ dominio_site }} www.{{ dominio_site }};
-
-    # SSL
-    ssl_certificate         {{ diretorio_ssl }}/fullchain.pem;
-    ssl_certificate_key     {{ diretorio_ssl }}/privkey.pem;
-    ssl_trusted_certificate {{ diretorio_ssl }}/chain.pem;
-    return                  301 https://{{ dominio_site }}$request_uri;
-
-}
-
-# HTTP redirect
-server {
-    listen      80;
-    listen      [::]:80;
-    server_name .{{ dominio_site }};
-   
-
-    location / {
-        return 301 https://{{ dominio_site }}$request_uri;
-    }
-}
