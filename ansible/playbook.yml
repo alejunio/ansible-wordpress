@@ -19,6 +19,8 @@
         home: "{{ diretorio_site }}"
         append: yes
         uid: "{{ uid_user }}"
+    - name: Configuracao Senha Usuario SFTP
+      shell: echo {{ user_site }}:{{ password_user }} | chpasswd 
         
      
     # Adminer MySQL Tool 
