@@ -51,16 +51,13 @@ bash /home/projeto/ansible/pass.sh
 
 ## Ajustando sua Stack
 
-Você deve editar as variáveis padrão para que consiga configurar corretamente seu site.
-Usando um editor como o nano ou vim, abra o arquivo de variáveis:
+Todas as credenciais do banco de dados e usuário SFTP foram gerados automáticamente, no entanto você ainda deve inserir o domínio, e-mail
+e a API KEY do Amplify caso vá utilizar.
 
 **/home/projeto/ansible/vars/var.yml**.
 
 Edite as variáveis abaixo antes de executar a stack:
 ```shell
- db_user:  
- db_user_password:
- db_name: 
  dominio_site: 
  email:
  key_amplify: 
