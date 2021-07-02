@@ -1,0 +1,21 @@
+- hosts: all 
+  become: true
+
+  # Gerando senhas e atualizando o sistema
+  tasks:
+
+    - name: Atualizando os repositorios
+      shell: sudo apt update
+    - name: Gerando senhas
+      shell: |
+            chmod +x +x /home/projeto/ansible/pass.sh
+            bash /home/projeto/ansible/pass.sh
+
+
+
+
+  # Variaveis personalizaveis / Definicao de dominio, email, usuarios 
+  vars_files:
+    - /home/projeto/ansible/vars/vars.yml
+
+    

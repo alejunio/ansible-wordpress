@@ -8,12 +8,12 @@ user_password=$(head -c 500 /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 25 | hea
 ## Criando arquivo de senhas
 cat > /home/credentials<<EOF
 # Passwords MySQL 
-DB WordPress PASS: ${db_user_password}
-MySQL ROOT PASS: ${mysql_root_password}
+DB WordPress PASS: $db_user_password
+MySQL ROOT PASS: $mysql_root_password
 
 # Password Access SFTP
-User: ${{user_site}}
-Password: ${user_password}
+User: wpuser
+Password: $user_password
 Port: 22
 EOF
 
