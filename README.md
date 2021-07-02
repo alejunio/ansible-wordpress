@@ -104,7 +104,6 @@ Softwares e ferramentas da solução.
  - [x] WP CLI
  - [x] Monitoramento Nginx e PHP: Nginx Amplify
  - [ ] Backup Local
- - [ ] Secrets Ansible Vault
 
 
  ## Referências / Creditos 
